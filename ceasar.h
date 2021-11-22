@@ -50,3 +50,33 @@ int main(int argc, string argv[])
  printf("\n");
  printf("The secret key is %s\n",argv[1]);
  return 0;
+ 
+ 
+ //prototype
+bool check_key(string s);
+
+int main(int argc, string argv[])
+{
+    if (argc != 2 || != check_key(string argv[1]))
+    {
+        printf("Usage: ./ceasar key\n");
+        return 1;
+    }
+    //insert key 
+    //int key = atoi(argv[1]);
+    
+
+}
+  
+bool check_key(string s)
+  {
+      int isdigit();
+      for (int i = 0, n = strlen (string s); i < n; i++)
+      if (string[s][i] == isdigit())
+      {
+          printf("Success\n");
+          return true;
+      }
+      else
+      return false;
+  }
