@@ -80,3 +80,53 @@ bool check_key(string s)
       else
       return false;
   }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     //convert key to integer
+    int key = atoi(input);
+
+    //ask for user input
+    string plaintext = get_string("Plaintext: ");
+
+
+    printf("Ciphertext: ");
+    for (int j = 0; j< strlen(plaintext); j++)
+     {
+             if(islower(plaintext[j]))
+             {
+                 printf("%c", ((plaintext[j] - 97 + key) % 26) + 97);
+             }
+
+         else
+             if(isupper(plaintext[j]))
+             {
+                 printf("%c", ((plaintext[j] - 65 + key) % 26) + 65);
+             }
+        else
+            {
+                printf("%c", plaintext[j]);
+             }
+         }
+         printf("\n");
+}
+
+}
+
